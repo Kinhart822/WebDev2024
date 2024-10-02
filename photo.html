@@ -5,267 +5,263 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Gallery</title>
-    <!-- CSS link -->
     <link rel="stylesheet" href="./photo.css">
-    <!-- Font Awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 
 <body>
-    <!-- Header -->
-    <div class="header">
-        <div class="tag_header">
-            <div class="icon">
-                <img id="icon"
-                    src="https://cdn.haitrieu.com/wp-content/uploads/2022/11/Logo-Truong-Dai-hoc-Khoa-hoc-va-Cong-nghe-Ha-Noi-VN-France-University.png"
-                    alt="">
-            </div>
-            <div class="Home">Home</div>
-            <div class="Image">Image</div>
-            <div class="Tool">Tool</div>
-            <div class="Temp">Template</div>
-            <div class="PSD">PSD</div>
-            <div class="More">More</div>
+<!-- Header -->
+<div class="header">
+    <div class="tag_header">
+        <img id="icon"
+             src="https://cdn.haitrieu.com/wp-content/uploads/2022/11/Logo-Truong-Dai-hoc-Khoa-hoc-va-Cong-nghe-Ha-Noi-VN-France-University.png"
+             alt="Logo">
+        <nav>
+            <div class="nav-item">Home</div>
+            <div class="nav-item">Image</div>
+            <div class="nav-item">Tool</div>
+            <div class="nav-item">Template</div>
+            <div class="nav-item">PSD</div>
+            <div class="nav-item">More</div>
+        </nav>
+    </div>
+    <div class="search_header">
+        <label for="search"></label>
+        <input id="search" type="text" placeholder="Search for photo">
+    </div>
+    <div class="profile_header">
+        <div class="notification" style="margin-right: 20px">
+            <i class="fa-regular fa-bell"></i>
         </div>
-
-        <div class="search_header">
-            <input id="search" type="text" placeholder="Search for photo">
+        <div class="ava">
+            <i class="fa-solid fa-user"></i>
         </div>
+    </div>
+</div>
 
-        <div class="profile_header">
-            <div class="noti">
-                <i class="fa-regular fa-bell"></i>
+<!-- Body -->
+<div class="body">
+    <!-- Filter -->
+    <div class="filter-buttons">
+        <button class="active" data-filter="all">Show all</button>
+        <button data-filter="nature">Nature</button>
+        <button data-filter="car">Cars</button>
+        <button data-filter="phone">Phone</button>
+        <button data-filter="shoe">Shoes</button>
+        <button data-filter="cloth">Clothes</button>
+        <button data-filter="movie">Movie</button>
+        <button data-filter="house">House</button>
+        <button data-filter="city">City</button>
+    </div>
+
+    <!-- Filterable Images / Cards Section -->
+    <div class="filterable-cards">
+        <div class="row">
+            <!-- Nature Cards -->
+            <div class="card" data-name="nature">
+                <img src="image/nature-1.jpg" alt="Nature 1">
+                <p>Beautiful Nature Scene 1</p>
+            </div>
+            <div class="card" data-name="nature">
+                <img src="image/nature-2.jpg" alt="Nature 2">
+                <p>Beautiful Nature Scene 2</p>
+            </div>
+            <div class="card" data-name="nature">
+                <img src="image/nature-3.jpg" alt="Nature 3">
+                <p>Beautiful Nature Scene 3</p>
+            </div>
+            <div class="card" data-name="nature">
+                <img src="image/nature-4.jpg" alt="Nature 4">
+                <p>Beautiful Nature Scene 4</p>
+            </div>
+            <div class="card" data-name="nature">
+                <img src="image/nature-5.jpg" alt="Nature 5">
+                <p>Beautiful Nature Scene 5</p>
             </div>
 
-            <div class="ava">
-                <i class="fa-solid fa-user"></i>
+            <!-- Car Cards -->
+            <div class="card" data-name="car">
+                <img src="image/car-1.jpg" alt="Car 1">
+                <p>Sleek Car Model 1</p>
+            </div>
+            <div class="card" data-name="car">
+                <img src="image/car-2.jpg" alt="Car 2">
+                <p>Sleek Car Model 2</p>
+            </div>
+            <div class="card" data-name="car">
+                <img src="image/car-3.jpg" alt="Car 3">
+                <p>Sleek Car Model 3</p>
+            </div>
+            <div class="card" data-name="car">
+                <img src="image/car-4.jpg" alt="Car 4">
+                <p>Sleek Car Model 4</p>
+            </div>
+            <div class="card" data-name="car">
+                <img src="image/car-5.jpg" alt="Car 5">
+                <p>Sleek Car Model 5</p>
+            </div>
+
+            <!-- Phone Cards -->
+            <div class="card" data-name="phone">
+                <img src="image/phone-1.jpg" alt="Phone 1">
+                <p>Latest Smartphone 1</p>
+            </div>
+            <div class="card" data-name="phone">
+                <img src="image/phone-2.jpg" alt="Phone 2">
+                <p>Latest Smartphone 2</p>
+            </div>
+            <div class="card" data-name="phone">
+                <img src="image/phone-3.jpg" alt="Phone 3">
+                <p>Latest Smartphone 3</p>
+            </div>
+            <div class="card" data-name="phone">
+                <img src="image/phone-4.jpg" alt="Phone 4">
+                <p>Latest Smartphone 4</p>
+            </div>
+            <div class="card" data-name="phone">
+                <img src="image/phone-5.jpg" alt="Phone 5">
+                <p>Latest Smartphone 5</p>
+            </div>
+
+            <!-- Shoe Cards -->
+            <div class="card" data-name="shoe">
+                <img src="image/shoe-1.jpg" alt="Shoe 1">
+                <p>Stylish Shoe 1</p>
+            </div>
+            <div class="card" data-name="shoe">
+                <img src="image/shoe-2.jpg" alt="Shoe 2">
+                <p>Stylish Shoe 2</p>
+            </div>
+            <div class="card" data-name="shoe">
+                <img src="image/shoe-3.jpg" alt="Shoe 3">
+                <p>Stylish Shoe 3</p>
+            </div>
+            <div class="card" data-name="shoe">
+                <img src="image/shoe-4.jpg" alt="Shoe 4">
+                <p>Stylish Shoe 4</p>
+            </div>
+            <div class="card" data-name="shoe">
+                <img src="image/shoe-5.jpg" alt="Shoe 5">
+                <p>Stylish Shoe 5</p>
+            </div>
+
+            <!-- Movie Cards -->
+            <div class="card" data-name="movie">
+                <img src="image/movie-1.jpg" alt="Movie 1">
+                <p>Popular Movie Poster 1</p>
+            </div>
+            <div class="card" data-name="movie">
+                <img src="image/movie-2.jpg" alt="Movie 2">
+                <p>Popular Movie Poster 2</p>
+            </div>
+            <div class="card" data-name="movie">
+                <img src="image/movie-3.jpg" alt="Movie 3">
+                <p>Popular Movie Poster 3</p>
+            </div>
+            <div class="card" data-name="movie">
+                <img src="image/movie-4.jpg" alt="Movie 4">
+                <p>Popular Movie Poster 4</p>
+            </div>
+            <div class="card" data-name="movie">
+                <img src="image/movie-5.jpg" alt="Movie 5">
+                <p>Popular Movie Poster 5</p>
+            </div>
+
+            <!-- House Cards -->
+            <div class="card" data-name="house">
+                <img src="image/house-1.jpg" alt="House 1">
+                <p>Modern House Design 1</p>
+            </div>
+            <div class="card" data-name="house">
+                <img src="image/house-2.jpg" alt="House 2">
+                <p>Modern House Design 2</p>
+            </div>
+            <div class="card" data-name="house">
+                <img src="image/house-3.jpg" alt="House 3">
+                <p>Modern House Design 3</p>
+            </div>
+            <div class="card" data-name="house">
+                <img src="image/house-4.jpg" alt="House 4">
+                <p>Modern House Design 4</p>
+            </div>
+            <div class="card" data-name="house">
+                <img src="image/house-5.jpg" alt="House 5">
+                <p>Modern House Design 5</p>
+            </div>
+
+            <!-- Cloth Cards -->
+            <div class="card" data-name="cloth">
+                <img src="image/cloth-1.jpg" alt="Cloth 1">
+                <p>Fashionable Cloth 1</p>
+            </div>
+            <div class="card" data-name="cloth">
+                <img src="image/cloth-2.jpg" alt="Cloth 2">
+                <p>Fashionable Cloth 2</p>
+            </div>
+            <div class="card" data-name="cloth">
+                <img src="image/cloth-3.jpg" alt="Cloth 3">
+                <p>Fashionable Cloth 3</p>
+            </div>
+            <div class="card" data-name="cloth">
+                <img src="image/cloth-4.jpg" alt="Cloth 4">
+                <p>Fashionable Cloth 4</p>
+            </div>
+            <div class="card" data-name="cloth">
+                <img src="image/cloth-5.jpg" alt="Cloth 5">
+                <p>Fashionable Cloth 5</p>
+            </div>
+
+            <!-- City Cards -->
+            <div class="card" data-name="city">
+                <img src="image/city-1.jpg" alt="City 1">
+                <p>Vibrant City 1</p>
+            </div>
+            <div class="card" data-name="city">
+                <img src="image/city-2.jpg" alt="City 2">
+                <p>Vibrant City 2</p>
+            </div>
+            <div class="card" data-name="city">
+                <img src="image/city-3.jpg" alt="City 3">
+                <p>Vibrant City 3</p>
+            </div>
+            <div class="card" data-name="city">
+                <img src="image/city-4.jpg" alt="City 4">
+                <p>Vibrant City 4</p>
+            </div>
+            <div class="card" data-name="city">
+                <img src="image/city-5.jpg" alt="City 5">
+                <p>Vibrant City 5</p>
             </div>
         </div>
     </div>
+</div>
 
-
-    <!-- Body -->
-    <div class="body">
-
-        <!-- Filter-->
-        <!-- data-filter == data-name -->
-        <div class="filter-buttons">
-            <button class="active" data-filter="all">Show all</button>
-            <button data-filter="nature">1</button>
-            <button data-filter="car">2</button>
-            <button data-filter="people">3</button>
-            <button data-filter="house">4</button>
-            <button data-filter="dog">5</button>
-            <button data-filter="cat">6</button>
-            <button data-filter="nature">7</button>
-            <button data-filter="car">8</button>
-            <button data-filter="people">9</button>
-            <button data-filter="house">10</button>
-            <button data-filter="dog">11</button>
-            <button data-filter="cat">12</button>
-            <button data-filter="nature">13</button>
-            <button data-filter="car">14</button>
-            <button data-filter="people">15</button>
-            <button data-filter="house">16</button>
-            <button data-filter="dog">17</button>
-            <button data-filter="cat">18</button>
-            <button data-filter="nature">19</button>
-            <button data-filter="car">20</button>
-            <button data-filter="people">21</button>
-            <button data-filter="house">22</button>
-            <button data-filter="dog">23</button>
-            <button data-filter="cat">24</button>
-            <button data-filter="cat">25</button>
-            <button data-filter="nature">26</button>
-            <button data-filter="car">27</button>
-            <button data-filter="people">28</button>
-            <button data-filter="house">29</button>
-            <button data-filter="dog">30</button>
-            <button data-filter="cat">31</button>
-            <button data-filter="nature">32</button>
-            <button data-filter="car">33</button>
-            <button data-filter="people">34</button>
+<!-- Footer -->
+<div class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>Contact</h4>
+            <p>Email: info@example.com</p>
+            <p style="margin-top: 10px">Phone: +123 456 7890</p>
         </div>
-
-        <!-- Filterable Images / Cards Section -->
-        <div class="filterable-cards">
-            <div class="row">
-                <div class="card" data-name="nature">
-                    <img src="cloth-1.jpg" alt="nature">
-                </div>
-
-                <div class="card" data-name="nature">
-                    <img src="cloth-2.jpg" alt="img">
-                </div>
-
-                <div class="card" data-name="nature">
-                    <img src="cloth-3.jpg" alt="img">
-                </div>
-
-                <div class="card" data-name="cars">
-                    <img src="phone-1.jpg" alt="img">
-                </div>
-
-                <div class="card" data-name="cars">
-                    <img src="phone-2.jpg" alt="img">
-                </div>
-
-                <div class="card" data-name="cars">
-                    <img src="phone-1.jpg" alt="img">
-                </div>
-
-                <div class="card" data-name="people">
-                    <img src="shoe-1.jpg" alt="img">
-                </div>
-
-                <div class="card" data-name="people">
-                    <img src="shoe-2.jpg" alt="img">
-                </div>
-
-                <div class="card" data-name="people">
-                    <img src="shoe-2.jpg" alt="img">
-                </div>
-
-            </div>
-            <div class="row">
-                <div class="card" data-name="nature">
-                    <img src="cloth-1.jpg" alt="nature">
-                </div>
-
-                <div class="card" data-name="nature">
-                    <img src="cloth-2.jpg" alt="img">
-                </div>
-
-                <div class="card" data-name="nature">
-                    <img src="cloth-3.jpg" alt="img">
-                </div>
-
-                <div class="card" data-name="cars">
-                    <img src="phone-1.jpg" alt="img">
-                </div>
-
-                <div class="card" data-name="cars">
-                    <img src="phone-2.jpg" alt="img">
-                </div>
-
-                <div class="card" data-name="cars">
-                    <img src="phone-1.jpg" alt="img">
-                </div>
-
-                <div class="card" data-name="people">
-                    <img src="shoe-1.jpg" alt="img">
-                </div>
-
-                <div class="card" data-name="people">
-                    <img src="shoe-2.jpg" alt="img">
-                </div>
-
-                <div class="card" data-name="people">
-                    <img src="shoe-2.jpg" alt="img">
-                </div>
-
-            </div>
-            <div class="row">
-                <div class="card" data-name="nature">
-                    <img src="cloth-1.jpg" alt="nature">
-                </div>
-
-                <div class="card" data-name="nature">
-                    <img src="cloth-2.jpg" alt="img">
-                </div>
-
-                <div class="card" data-name="nature">
-                    <img src="cloth-3.jpg" alt="img">
-                </div>
-
-                <div class="card" data-name="cars">
-                    <img src="phone-1.jpg" alt="img">
-                </div>
-
-                <div class="card" data-name="cars">
-                    <img src="phone-2.jpg" alt="img">
-                </div>
-
-                <div class="card" data-name="cars">
-                    <img src="phone-1.jpg" alt="img">
-                </div>
-
-                <div class="card" data-name="people">
-                    <img src="shoe-1.jpg" alt="img">
-                </div>
-
-                <div class="card" data-name="people">
-                    <img src="shoe-2.jpg" alt="img">
-                </div>
-
-                <div class="card" data-name="people">
-                    <img src="shoe-2.jpg" alt="img">
-                </div>
-
-            </div>
-            <div class="row">
-                <div class="card" data-name="nature">
-                    <img src="cloth-1.jpg" alt="nature">
-                </div>
-
-                <div class="card" data-name="nature">
-                    <img src="cloth-2.jpg" alt="img">
-                </div>
-
-                <div class="card" data-name="nature">
-                    <img src="cloth-3.jpg" alt="img">
-                </div>
-
-                <div class="card" data-name="cars">
-                    <img src="phone-1.jpg" alt="img">
-                </div>
-
-                <div class="card" data-name="cars">
-                    <img src="phone-2.jpg" alt="img">
-                </div>
-
-                <div class="card" data-name="cars">
-                    <img src="phone-1.jpg" alt="img">
-                </div>
-
-                <div class="card" data-name="people">
-                    <img src="shoe-1.jpg" alt="img">
-                </div>
-
-                <div class="card" data-name="people">
-                    <img src="shoe-2.jpg" alt="img">
-                </div>
-
-                <div class="card" data-name="people">
-                    <img src="shoe-2.jpg" alt="img">
-                </div>
-
-            </div>
-
+        <div class="footer-section">
+            <h4>Social Network</h4>
+            <a href="#" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
         </div>
-
+        <div class="footer-section">
+            <h4>Information</h4>
+            <p>We provide the highest quality photos for you.</p>
+        </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- JavaScript script -->
-    <script src="./photo.js"></script>
+    <div class="footer-bottom" style="margin-top: 20px">
+        <p>&copy; 2024 Photo Gallery.</p>
+    </div>
+</div>
+<script src="./photo.js"></script>
 </body>
 
 </html>
